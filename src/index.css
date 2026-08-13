@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+@keyframes floatImage {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+.animate-float {
+  animation: floatImage 3s ease-in-out infinite;
+}
+
+/* =========================================
+   PROFILE IMAGE FLOATING ANIMATION
+========================================= */
+
+@keyframes floatImage {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+.animate-float {
+  animation: floatImage 3s ease-in-out infinite;
+}
+
+
+/* =========================================
+   NAME LETTER-BY-LETTER ANIMATION
+========================================= */
+@keyframes nameLetter {
+  0% {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+
+  8% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  75% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+}
+
+.animate-name-letter {
+  opacity: 0;
+  animation: nameLetter 3s ease-in-out infinite;
+}
